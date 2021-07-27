@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <header>
+        <h1>froggit</h1>
+        
+        <div class="search-bar">
+            <img src="https://s2.svgbox.net/materialui.svg?ic=search&color=000000" width="32" height="32">
+            <input type="text" placeholder="Search Froggit">
+        </div>
+
+        <ul>
+            <li><a href="https://www.ronald-luo.com/100-websites/" id="log-in">Projects</a></li>
+            <li><a href="https://github.com/ronald-luo" id="sign-up">GitHub</a></li>
+        </ul>
+    </header>
+
+
+        <section>
+            <div class="upvotes">
+                <img src="https://s2.svgbox.net/materialui.svg?ic=arrow_circle_up&color=ffffff" width="32" height="32">
+                <p>24.6k</p>
+                <img src="https://s2.svgbox.net/materialui.svg?ic=arrow_circle_down&color=ffffff" width="32" height="32">
+            </div>
+
+            <div class="title">
+                <img src="https://s2.svgbox.net/materialui.svg?ic=wysiwyg&color=ffffff" width="32" height="32">
+
+                <h2>
+                    Is the Odin Project Legit?
+                </h2>
+            </div>
+
+            <div class="close">
+                <img src="https://s2.svgbox.net/materialui.svg?ic=close&color=ffffff" width="32" height="32">
+            Close
+            </div>
+        </section>
+
+    <main>
+
+
+        <div class="msg-container">
+            <div class="upvotes">
+                <img src="https://s2.svgbox.net/materialui.svg?ic=arrow_circle_up&color=787c7e" width="32" height="32">
+                <p>24.6k</p>
+                <img src="https://s2.svgbox.net/materialui.svg?ic=arrow_circle_down&color=787c7e" width="32" height="32">
+            </div>
+
+            <div class="everything-else">
+                <div class="posted-by">
+                    <p>Posted by <a href="/">u/reddituser99</a> 11 hours ago</p>
+                </div>
+
+                <h3>
+                    Is the Odin Project Legit?
+                </h3>
+                <p>
+                    I tried the other major learn coding websites and felt like I wasn't actually learning anything since they just tell you
+                    what to type in and I feel like I wasted a couple weeks of my life on those.
+                    
+                    The Odin Project makes you set up an actual environment on your computer where you learn how to actually write code. All
+                    the learning and projects will be much harder than the hand hold websites, but you'll actually be learning.
+                    
+                    You'll mostly be doing a ton of reading the developer docs and googling how to do stuff and trying to figure out why
+                    your program isn't working, but I figure that's what actual programmers do.
+                    
+                    I really think sites like codecademy etc are a total waste compared to the odin project.
+                </p>
+                
+                <ul>
+                    <li><a href="#"><img src="https://s2.svgbox.net/octicons.svg?ic=comment&color=878a8c" width="32" height="32">2 Comments</a></li>
+                    <li><a href="#"><img src="https://s2.svgbox.net/hero-outline.svg?ic=share&color=878a8c" width="32" height="32">Share</a></li>
+                    <li><a href="#"><img src="https://s2.svgbox.net/octicons.svg?ic=bookmark&color=878a8c" width="32" height="32">Save</a></li>
+                    <li><a href="#"><img src="https://s2.svgbox.net/octicons.svg?ic=eye-closed&color=878a8c" width="32" height="32">Hide</a></li>
+                    <li><a href="#"><img src="https://s2.svgbox.net/hero-outline.svg?ic=flag&color=878a8c" width="32" height="32">Report</a></li>
+                </ul>
+
+                    <form method="POST" action="/new">
+                        <label for="user">Username</label>
+                        <input type="text" id="user" name='user' required>
+                        <label for="text">Comment</label>
+                        <textarea type="text" id="text" name='text' class="post-container" required></textarea>
+                        <input type="submit">
+                    </form>
+                <hr>
+
+            </div>
+
+        </div>
+
+
+        <div class="sub-container">
+            <div class="sub-header">
+                <h2>About Community</h3>
+                <img src="https://s2.svgbox.net/octicons.svg?ic=kebab-horizontal&color=000000" width="32" height="32">
+            </div>
+
+            <div class="sub-description">
+                <img src="https://s2.svgbox.net/files.svg?ic=jss&color=000" width="40" height="40">
+                <h3>r/learnprogramming</h3>
+                <p>A subreddit for all questions related to programming in any language.</p>
+            </div>
+
+            <div class="stats">
+
+                <div class="members">
+                    <h3>2.4m</h3>
+                    <h4>Members</h4>
+                </div>
+
+                <div class="online">
+                    <h3>1.5k</h3>
+                    <h4>Online</h4>
+                </div>
+            </div>
+            <hr>
+
+            <div class="birthday">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=cake&color=000" width="32" height="32">
+                <div class="date">Created Sep 24, 2009</div>
+            </div>
+
+            <div class="join-btn">Join</div>
+        </div>
+
+        <%- include('comments.ejs') %>
+    </main>

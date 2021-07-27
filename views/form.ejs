@@ -1,0 +1,12 @@
+<%- include('header.ejs') %>
+
+<h2>Submit a message!</h2>
+<form method="POST" action="/new">
+    <label for="text"></label>
+    <input type="text" id="text" name='text'>
+    <label for="user"></label>
+    <input type="text" id="user" name='user'>
+    <input type="submit">
+</form>
+
+<%- include('footer.ejs') %>
